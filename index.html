@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>宮﨑竜治 | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a class="nav__logo" href="#hero">~/<span>miyazaki-ryuji</span></a>
+      <button class="nav__hamburger" id="hamburger" aria-label="メニュー">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#about">about</a></li>
+        <li><a href="#skills">skills</a></li>
+        <li><a href="#career">career</a></li>
+        <li><a href="#projects">projects</a></li>
+        <li><a href="#oss">oss</a></li>
+        <li><a href="#activities">activities</a></li>
+        <li><a href="#contact">contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="hero__terminal-col">
+      <div class="terminal">
+        <div class="terminal__bar">
+          <div class="terminal__dots">
+            <span class="dot dot--r"></span>
+            <span class="dot dot--y"></span>
+            <span class="dot dot--g"></span>
+          </div>
+          <span class="terminal__title">profile.json — zsh</span>
+        </div>
+        <div class="terminal__body" id="termBody" aria-label="プロフィール情報"></div>
+      </div>
+    </div>
+    <div class="hero__aside">
+      <img class="hero__photo" src="face_icon.png" alt="宮﨑竜治" />
+      <div class="hero__identity">
+        <p class="hero__name-en">Ryuji Miyazaki</p>
+        <p class="hero__name-ja">宮﨑 竜治</p>
+      </div>
+      <div class="hero__stats">
+        <div class="hero__stat">
+          <span class="hero__stat-num">3</span>
+          <span class="hero__stat-label">App Store<br />リリース</span>
+        </div>
+        <div class="hero__stat-divider"></div>
+        <div class="hero__stat">
+          <span class="hero__stat-num">150%</span>
+          <span class="hero__stat-label">営業<br />達成率</span>
+        </div>
+        <div class="hero__stat-divider"></div>
+        <div class="hero__stat">
+          <span class="hero__stat-num">5+</span>
+          <span class="hero__stat-label">言語<br />スタック</span>
+        </div>
+      </div>
+      <div class="hero__cta">
+        <a class="btn btn--terminal" href="#projects">$ view_projects</a>
+        <a class="btn btn--ghost" href="#contact">$ contact</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section" id="about">
+    <div class="container">
+      <header class="section__header fade-in">
+        <p class="section__label">about</p>
+        <h2 class="section__title">自己紹介</h2>
+      </header>
+      <div class="about__grid fade-in">
+        <div class="about__body">
+          <h3 class="about__headline">ハイブリッド型エンジニア</h3>
+          <p class="about__text">
+            大学卒業後、三菱電機ITソリューションズにてコンサルティング営業に従事。5エリアの代理店を担当し、目標達成率 <strong>140〜150%</strong> を継続達成。
+          </p>
+          <p class="about__text">
+            2022年9月に富士ソフトへ転職し、組み込み・業務系エンジニアとして自動車向けドライブレコーダー、電子タグ、セルフレジシステムなど多様なプロジェクトを経験。業務外でも Swift / SwiftUI を用いた iOS アプリを <strong>3本 App Store にリリース</strong> しています。
+          </p>
+          <p class="about__text">
+            副業では、DMM の <strong>「ClaudeCodeマスターゼミ」「Difyマスターゼミ」「ClaudeCode入門ゼミ」「AIアプリ開発入門ゼミ」</strong> の講師・登壇者として、第1期から第6期まで <strong>のべ10クラス</strong> を担当（第1期マスターゼミ2講座の応募合計 370 名以上）。Claude Code・Dify をテーマにしたワークショップにも <strong>13本</strong> 登壇しています。2026年10月までは、デジハクで生成AI PRO コースの専属メンターと法人向けAI研修のカリキュラム設計も担当しました。OSS としては Claude Code 向けプラグインを <strong>4本</strong> 個人開発し GitHub で公開中。
+          </p>
+          <p class="about__text">
+            「教える」だけで終わらせず、受講生の理解度を測る<strong>学習管理Webアプリを自作</strong>して Turso・Vercel で本番運用するなど、教育の仕組みごと設計・運用しているのが特徴です。
+          </p>
+          <p class="about__text">
+            ビジネスサイドと開発現場の両方の視点を持ち、「なぜ作るのか」を常に意識した開発が強みです。
+          </p>
+          <div class="about__highlights">
+            <div class="highlight">
+              <span class="highlight__num">3本</span>
+              <span class="highlight__label">App Store リリース</span>
+            </div>
+            <div class="highlight">
+              <span class="highlight__num">10</span>
+              <span class="highlight__label">担当ゼミ（のべクラス数）</span>
+            </div>
+            <div class="highlight">
+              <span class="highlight__num">4本</span>
+              <span class="highlight__label">OSS プラグイン公開</span>
+            </div>
+            <div class="highlight">
+              <span class="highlight__num">150%</span>
+              <span class="highlight__label">営業目標達成率</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="section section--alt" id="skills">
+    <div class="container">
+      <header class="section__header fade-in">
+        <p class="section__label">skills</p>
+        <h2 class="section__title">技術スキル</h2>
+      </header>
+      <div class="skills__grid fade-in">
+        <div class="skills__col">
+          <h3 class="skills__cat">言語</h3>
+          <div class="skill-list">
+            <div class="skill-item">
+              <div class="skill-item__meta">
+                <span class="skill-item__name">Swift / SwiftUI</span>
+                <span class="skill-item__level">2年以上</span>
+              </div>
+              <div class="skill-item__bar"><div class="skill-item__fill" data-width="85"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item__meta">
+                <span class="skill-item__name">Dart / Flutter</span>
+                <span class="skill-item__level">1年以上</span>
+              </div>
+              <div class="skill-item__bar"><div class="skill-item__fill" data-width="75"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item__meta">
+                <span class="skill-item__name">Python</span>
+                <span class="skill-item__level">2年</span>
+              </div>
+              <div class="skill-item__bar"><div class="skill-item__fill" data-width="70"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item__meta">
+                <span class="skill-item__name">Go</span>
+                <span class="skill-item__level">半年</span>
+              </div>
+              <div class="skill-item__bar"><div class="skill-item__fill" data-width="55"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item__meta">
+                <span class="skill-item__name">C++</span>
+                <span class="skill-item__level">半年</span>
+              </div>
+              <div class="skill-item__bar"><div class="skill-item__fill" data-width="50"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item__meta">
+                <span class="skill-item__name">Java</span>
+                <span class="skill-item__level">半年</span>
+              </div>
+              <div class="skill-item__bar"><div class="skill-item__fill" data-width="40"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item__meta">
+                <span class="skill-item__name">JavaScript / Node.js</span>
+                <span class="skill-item__level">1年以上</span>
+              </div>
+              <div class="skill-item__bar"><div class="skill-item__fill" data-width="60"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item__meta">
+                <span class="skill-item__name">HTML / CSS</span>
+                <span class="skill-item__level">3年以上</span>
+              </div>
+              <div class="skill-item__bar"><div class="skill-item__fill" data-width="70"></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="skills__col">
+          <h3 class="skills__cat">フレームワーク / ツール</h3>
+          <div class="tag-cloud">
+            <span class="tag tag--fw">Firebase</span>
+            <span class="tag tag--fw">ChatGPT API</span>
+            <span class="tag tag--fw">GetX</span>
+            <span class="tag tag--fw">Echo (Go)</span>
+            <span class="tag tag--fw">Flask</span>
+            <span class="tag tag--fw">Pillow</span>
+            <span class="tag tag--fw">MariaDB</span>
+            <span class="tag tag--fw">Cloud Firestore</span>
+            <span class="tag tag--fw">Turso / libSQL</span>
+            <span class="tag tag--fw">SQLite</span>
+            <span class="tag tag--fw">Ruby on Rails</span>
+            <span class="tag tag--fw">MVVM</span>
+            <span class="tag tag--fw">Excel VBA</span>
+            <span class="tag tag--tool">Git</span>
+            <span class="tag tag--tool">VSCode</span>
+            <span class="tag tag--tool">Xcode</span>
+            <span class="tag tag--tool">Cursor</span>
+            <span class="tag tag--tool">Android Studio</span>
+            <span class="tag tag--tool">Arduino</span>
+            <span class="tag tag--tool">WSL</span>
+            <span class="tag tag--tool">Vercel</span>
+            <span class="tag tag--tool">GitHub Pages</span>
+            <span class="tag tag--tool">Google Apps Script</span>
+            <span class="tag tag--ai">Dify</span>
+            <span class="tag tag--ai">ChatGPT</span>
+            <span class="tag tag--ai">Claude</span>
+            <span class="tag tag--ai">Claude Code</span>
+            <span class="tag tag--ai">Copilot</span>
+            <span class="tag tag--ai">NotebookLM</span>
+          </div>
+          <h3 class="skills__cat" style="margin-top: 2rem;">資格</h3>
+          <div class="tag-cloud">
+            <span class="tag tag--cert">生成AIパスポート（2026年）</span>
+            <span class="tag tag--cert">ITパスポート（2021年）</span>
+            <span class="tag tag--cert">普通自動車第一種免許（2017年）</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Career -->
+  <section class="section" id="career">
+    <div class="container">
+      <header class="section__header fade-in">
+        <p class="section__label">career</p>
+        <h2 class="section__title">職務経歴</h2>
+      </header>
+
+      <div class="timeline fade-in">
+
+        <!-- 富士ソフト -->
+        <div class="timeline__company">
+          <div class="timeline__company-header">
+            <span class="timeline__dot timeline__dot--main"></span>
+            <div>
+              <h3 class="timeline__company-name">富士ソフト株式会社</h3>
+              <p class="timeline__company-meta"><span class="timeline__period">2022.09 → 現在</span><span class="timeline__role">組み込み / 業務系エンジニア</span></p>
+            </div>
+          </div>
+          <div class="timeline__items">
+            <div class="timeline__item">
+              <span class="timeline__dot"></span>
+              <div class="timeline__content">
+                <p class="timeline__date">2025.01 → 現在</p>
+                <h4 class="timeline__title">製造業 セルフレジシステム開発</h4>
+                <p class="timeline__desc">30名体制のプロジェクトにて不具合調査・修正、収納代行機能の新規開発を担当。</p>
+                <div class="timeline__tags">
+                  <span class="tag tag--tech">Dart / Flutter</span>
+                  <span class="tag tag--tech">GetX</span>
+                  <span class="tag tag--tech">WSL</span>
+                </div>
+              </div>
+            </div>
+            <div class="timeline__item">
+              <span class="timeline__dot"></span>
+              <div class="timeline__content">
+                <p class="timeline__date">2024.06 → 2024.12</p>
+                <h4 class="timeline__title">製造業向け電子タグの開発（主担当）</h4>
+                <p class="timeline__desc">要件定義・制御仕様書作成から実装・テスト・納品まで一貫して主担当。NFC・E-paper・ZigBee を統合。顧客より高評価を得て追加発注を獲得。</p>
+                <div class="timeline__tags">
+                  <span class="tag tag--tech">C++</span>
+                  <span class="tag tag--tech">Arduino</span>
+                </div>
+              </div>
+            </div>
+            <div class="timeline__item">
+              <span class="timeline__dot"></span>
+              <div class="timeline__content">
+                <p class="timeline__date">2024.01 → 2024.05</p>
+                <h4 class="timeline__title">ドライブレコーダー用連携 Web サイトのバックエンド開発</h4>
+                <p class="timeline__desc">不具合調査・改修、エラーディスパッチャの新規実装を担当。Go / Echo を未経験から習得して実務レベルへ。</p>
+                <div class="timeline__tags">
+                  <span class="tag tag--tech">Go</span>
+                  <span class="tag tag--tech">Echo</span>
+                  <span class="tag tag--tech">MariaDB</span>
+                </div>
+              </div>
+            </div>
+            <div class="timeline__item">
+              <span class="timeline__dot"></span>
+              <div class="timeline__content">
+                <p class="timeline__date">2022.12 → 2023.12</p>
+                <h4 class="timeline__title">自動車業界向けドライブレコーダーのソフトウェアテスト</h4>
+                <p class="timeline__desc">30名体制のプロジェクトにてテスト項目書の作成・実行・進捗管理補助。並行して社内業務自動化ツール（Python スクレイピング + Excel VBA）を開発。</p>
+                <div class="timeline__tags">
+                  <span class="tag tag--tech">Python</span>
+                  <span class="tag tag--tech">VBA</span>
+                  <span class="tag tag--tech">Java</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 三菱電機 -->
+        <div class="timeline__company">
+          <div class="timeline__company-header">
+            <span class="timeline__dot timeline__dot--main"></span>
+            <div>
+              <h3 class="timeline__company-name">三菱電機ITソリューションズ株式会社</h3>
+              <p class="timeline__company-meta"><span class="timeline__period">2021.04 → 2022.08</span><span class="timeline__role">コンサルティング営業</span></p>
+            </div>
+          </div>
+          <div class="timeline__items">
+            <div class="timeline__item">
+              <span class="timeline__dot"></span>
+              <div class="timeline__content">
+                <p class="timeline__date">2021.04 → 2022.08</p>
+                <h4 class="timeline__title">自社製品の代理店向けコンサルティング営業</h4>
+                <p class="timeline__desc">新潟・長野・大阪・広島・福岡の5エリアを担当。業務改善提案・定例ミーティング・イベント企画を通じて担当代理店の売上目標を継続達成。</p>
+                <div class="achievement-badges">
+                  <span class="badge">2021上半期 150%</span>
+                  <span class="badge">2021下半期 140%</span>
+                  <span class="badge">2022上半期 達成見込み</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 副業 -->
+        <div class="timeline__company">
+          <div class="timeline__company-header">
+            <span class="timeline__dot timeline__dot--main timeline__dot--purple"></span>
+            <div>
+              <h3 class="timeline__company-name">副業・個人開発</h3>
+              <p class="timeline__company-meta"><span class="timeline__period">2023 → 現在</span></p>
+            </div>
+          </div>
+          <div class="timeline__items">
+            <div class="timeline__item">
+              <span class="timeline__dot"></span>
+              <div class="timeline__content">
+                <p class="timeline__date">2026.05 → 現在</p>
+                <h4 class="timeline__title">DMM 生成AI CAMP「ゼミ」講師・登壇</h4>
+                <p class="timeline__desc">「ClaudeCodeマスターゼミ」「Difyマスターゼミ」「ClaudeCode入門ゼミ」「AIアプリ開発入門ゼミ」の講師・登壇者として、3ヶ月・全13回（AIアプリ開発入門ゼミは隔週・全7回）のゼミを第1期から第6期まで <strong>のべ10クラス</strong> 担当（最大6クラスを並行運営）。週次LIVE講義・事前課題の公開添削・卒業制作の指導まで担当し、AIアプリ開発入門ゼミはカリキュラムの設計から手がけた。第1期の ClaudeCodeマスターゼミは <strong>270名以上</strong>、Difyマスターゼミは <strong>100名以上</strong> の応募を獲得。</p>
+                <div class="timeline__tags">
+                  <span class="tag tag--ai">Claude Code</span>
+                  <span class="tag tag--ai">Dify</span>
+                </div>
+              </div>
+            </div>
+            <div class="timeline__item">
+              <span class="timeline__dot"></span>
+              <div class="timeline__content">
+                <p class="timeline__date">2026.06 → 現在</p>
+                <h4 class="timeline__title">DMM ゼミ教材・学習管理システムの設計・開発</h4>
+                <p class="timeline__desc">授業中の理解度チェックアプリ「リカイド」（2026.09 まで運用。全108レッスンを2度監査）と、ゼミ横断の演習・宿題・模擬試験サイト「Boarding Pass」を設計・実装し本番運用。外部依存ゼロのPOCで仕様を検証してから Turso＋Vercel へ移行。Boarding Pass には3ゼミと生成AIパスポート試験対策の演習 <strong>900問超</strong> と講義資料を載せ、受講生向けガイドも継続して追加している。</p>
+                <div class="timeline__tags">
+                  <span class="tag tag--tech">Node.js</span>
+                  <span class="tag tag--tech">Turso</span>
+                  <span class="tag tag--tech">Vercel</span>
+                  <span class="tag tag--tech">Python</span>
+                </div>
+              </div>
+            </div>
+            <div class="timeline__item">
+              <span class="timeline__dot"></span>
+              <div class="timeline__content">
+                <p class="timeline__date">2026.06 → 2026.07</p>
+                <h4 class="timeline__title">DMM 書籍POP・LP自動生成マルチエージェントシステム開発</h4>
+                <p class="timeline__desc">書籍の販促POP画像とLPを自動生成するシステムを設計・実装。背景ビジュアルは画像生成AI、日本語テキストは Pillow で合成する分担にして文字崩れを構造的に回避。統合UI（Flask）とプレゼン用デモまで制作。</p>
+                <div class="timeline__tags">
+                  <span class="tag tag--tech">Python</span>
+                  <span class="tag tag--tech">Flask</span>
+                  <span class="tag tag--ai">fal.ai</span>
+                  <span class="tag tag--ai">OpenAI API</span>
+                </div>
+              </div>
+            </div>
+            <div class="timeline__item">
+              <span class="timeline__dot"></span>
+              <div class="timeline__content">
+                <p class="timeline__date">2026.03 → 現在</p>
+                <h4 class="timeline__title">DMM AI関連 Workshop・ウェビナー 企画・登壇</h4>
+                <p class="timeline__desc">DMMの方針変更によりメンター業務から Workshop 担当へ移行。Claude Code・Dify をテーマにした先着100〜200名規模のハンズオンを継続開催し、2026年5月から9月までに <strong>13本</strong> 登壇。題材は再利用できる Claude Code プラグインとして実装し OSS 公開している。</p>
+                <div class="timeline__tags">
+                  <span class="tag tag--ai">Claude Code</span>
+                  <span class="tag tag--ai">Dify</span>
+                </div>
+              </div>
+            </div>
+            <div class="timeline__item">
+              <span class="timeline__dot"></span>
+              <div class="timeline__content">
+                <p class="timeline__date">2026.06 → 2026.10</p>
+                <h4 class="timeline__title">デジハク 法人向けAI研修 カリキュラム設計・教材制作</h4>
+                <p class="timeline__desc">UNIT BASE株式会社「デジハク」の法人向けAI研修において、全10回カリキュラムの構成設計と、中核となる STEP2（全6回）の設計を担当。模擬案件「自社情報を回答するチャットボット」を Dify のチャットフローで作り切る構成に設計し、GAS自動化教材3本も制作。</p>
+                <div class="timeline__tags">
+                  <span class="tag tag--ai">Dify</span>
+                  <span class="tag tag--tech">Google Apps Script</span>
+                </div>
+              </div>
+            </div>
+            <div class="timeline__item">
+              <span class="timeline__dot"></span>
+              <div class="timeline__content">
+                <p class="timeline__date">2026.04 → 2026.10</p>
+                <h4 class="timeline__title">デジハク 生成AI PROコース 専属メンター</h4>
+                <p class="timeline__desc">UNIT BASE株式会社が運営するAIスクール「デジハク」生成AI PROコースの専属メンターとして、AIを活用したキャリア形成・収入向上をテーマにしたマンツーマンメンタリングを担当。Claude Code のスキルズ／プラグインをテーマにした講義にも登壇。本コースの教材作成・カリキュラム設計は範囲外。</p>
+                <div class="timeline__tags">
+                  <span class="tag tag--ai">ChatGPT</span>
+                  <span class="tag tag--ai">Claude</span>
+                  <span class="tag tag--ai">Dify</span>
+                  <span class="tag tag--ai">NotebookLM</span>
+                </div>
+              </div>
+            </div>
+            <div class="timeline__item">
+              <span class="timeline__dot"></span>
+              <div class="timeline__content">
+                <p class="timeline__date">2026.06</p>
+                <h4 class="timeline__title">IIJ ソフトウェア開発基礎研修 教材・テスト制作</h4>
+                <p class="timeline__desc">Python 基礎研修のうち、初学者が最もつまずくオブジェクト指向の章を担当。到達目標を「まずコードが読める」に置き直して構成を再設計し、教材サイトと確認テスト・成果測定テストまで制作。</p>
+                <div class="timeline__tags">
+                  <span class="tag tag--tech">Python</span>
+                  <span class="tag tag--tech">HTML / CSS</span>
+                </div>
+              </div>
+            </div>
+            <div class="timeline__item">
+              <span class="timeline__dot"></span>
+              <div class="timeline__content">
+                <p class="timeline__date">2025.07 → 2026.03</p>
+                <h4 class="timeline__title">DMM Difyマスターコース メンター</h4>
+                <p class="timeline__desc">AI開発ツール「Dify」受講生向けの非同期チャットサポート（Slack）を担当し、学習支援・疑問対応を実施。</p>
+                <div class="timeline__tags">
+                  <span class="tag tag--ai">Dify</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="section section--alt" id="projects">
+    <div class="container">
+      <header class="section__header fade-in">
+        <p class="section__label">projects</p>
+        <h2 class="section__title">実績・プロジェクト</h2>
+      </header>
+      <div class="projects__grid">
+
+        <div class="project-card fade-in">
+          <div class="project-card__bar">
+            <div class="terminal__dots terminal__dots--sm">
+              <span class="dot dot--r"></span><span class="dot dot--y"></span><span class="dot dot--g"></span>
+            </div>
+            <span class="project-card__filename">PetTrack.swift</span>
+          </div>
+          <div class="project-card__body">
+            <h3 class="project-card__title">PetTrack</h3>
+            <p class="project-card__sub">iOS ペット管理アプリ</p>
+            <p class="project-card__desc">MVVM 設計で Firebase Authentication / Cloud Firestore を活用。ペットの健康記録・スケジュール管理機能を実装し App Store にリリース。</p>
+            <div class="project-card__tags">
+              <span class="tag tag--tech">Swift</span>
+              <span class="tag tag--tech">SwiftUI</span>
+              <span class="tag tag--tech">Firebase</span>
+              <span class="tag tag--tech">MVVM</span>
+            </div>
+          </div>
+          <div class="project-card__footer">
+            <a class="project-card__link" href="https://apps.apple.com/jp/app/pettrack/id6755449885" target="_blank" rel="noopener">App Store で見る →</a>
+          </div>
+        </div>
+
+        <div class="project-card fade-in">
+          <div class="project-card__bar">
+            <div class="terminal__dots terminal__dots--sm">
+              <span class="dot dot--r"></span><span class="dot dot--y"></span><span class="dot dot--g"></span>
+            </div>
+            <span class="project-card__filename">AIGame.swift</span>
+          </div>
+          <div class="project-card__body">
+            <h3 class="project-card__title">AIカメと遊ぶ 水平思考ゲーム</h3>
+            <p class="project-card__sub">iOS AI ゲームアプリ</p>
+            <p class="project-card__desc">ChatGPT API を活用した AI 会話ゲーム。ユーザーが謎に質問し、AI が Yes / No で答えながら真相を導くインタラクティブな体験を提供。</p>
+            <div class="project-card__tags">
+              <span class="tag tag--tech">Swift</span>
+              <span class="tag tag--tech">SwiftUI</span>
+              <span class="tag tag--ai">ChatGPT API</span>
+            </div>
+          </div>
+          <div class="project-card__footer">
+            <a class="project-card__link" href="https://apps.apple.com/jp/app/ai%E3%82%AB%E3%83%A1%E3%81%A8%E9%81%8A%E3%81%B6-%E6%B0%B4%E5%B9%B3%E6%80%9D%E8%80%83%E3%82%B2%E3%83%BC%E3%83%A0/id6741681317" target="_blank" rel="noopener">App Store で見る →</a>
+          </div>
+        </div>
+
+        <div class="project-card fade-in">
+          <div class="project-card__bar">
+            <div class="terminal__dots terminal__dots--sm">
+              <span class="dot dot--r"></span><span class="dot dot--y"></span><span class="dot dot--g"></span>
+            </div>
+            <span class="project-card__filename">ScanGuard.swift</span>
+          </div>
+          <div class="project-card__body">
+            <h3 class="project-card__title">ScanGuard</h3>
+            <p class="project-card__sub">iOS スキャン・セキュリティアプリ</p>
+            <p class="project-card__desc">スキャン機能とセキュリティ機能を組み合わせた iOS アプリを設計・開発し App Store にリリース。</p>
+            <div class="project-card__tags">
+              <span class="tag tag--tech">Swift</span>
+              <span class="tag tag--tech">SwiftUI</span>
+            </div>
+          </div>
+          <div class="project-card__footer">
+            <a class="project-card__link" href="https://apps.apple.com/jp/app/scanguard/id6755509656" target="_blank" rel="noopener">App Store で見る →</a>
+          </div>
+        </div>
+
+        <div class="project-card fade-in">
+          <div class="project-card__bar">
+            <div class="terminal__dots terminal__dots--sm">
+              <span class="dot dot--r"></span><span class="dot dot--y"></span><span class="dot dot--g"></span>
+            </div>
+            <span class="project-card__filename">e-tag.cpp</span>
+          </div>
+          <div class="project-card__body">
+            <h3 class="project-card__title">製造業向け電子タグ開発</h3>
+            <p class="project-card__sub">組み込みシステム（主担当）</p>
+            <p class="project-card__desc">要件定義から制御仕様書作成・実装・テスト・納品まで一貫して主担当。NFC・E-paper・ZigBee 等の複数モジュールを統合し、顧客から高評価。追加発注を獲得。</p>
+            <div class="project-card__tags">
+              <span class="tag tag--tech">C++</span>
+              <span class="tag tag--tech">Arduino</span>
+            </div>
+          </div>
+          <div class="project-card__footer">
+            <span class="project-card__badge">業務案件</span>
+          </div>
+        </div>
+
+        <div class="project-card fade-in">
+          <div class="project-card__bar">
+            <div class="terminal__dots terminal__dots--sm">
+              <span class="dot dot--r"></span><span class="dot dot--y"></span><span class="dot dot--g"></span>
+            </div>
+            <span class="project-card__filename">backend.go</span>
+          </div>
+          <div class="project-card__body">
+            <h3 class="project-card__title">ドライブレコーダー連携 Web サイト</h3>
+            <p class="project-card__sub">バックエンド開発</p>
+            <p class="project-card__desc">Go / Echo を未経験から短期習得し、不具合調査・改修とエラーディスパッチャの新規実装を担当。5名体制で5ヶ月間バックエンド開発に従事。</p>
+            <div class="project-card__tags">
+              <span class="tag tag--tech">Go</span>
+              <span class="tag tag--tech">Echo</span>
+              <span class="tag tag--tech">MariaDB</span>
+            </div>
+          </div>
+          <div class="project-card__footer">
+            <span class="project-card__badge">業務案件</span>
+          </div>
+        </div>
+
+        <div class="project-card fade-in">
+          <div class="project-card__bar">
+            <div class="terminal__dots terminal__dots--sm">
+              <span class="dot dot--r"></span><span class="dot dot--y"></span><span class="dot dot--g"></span>
+            </div>
+            <span class="project-card__filename">master-seminar.md</span>
+          </div>
+          <div class="project-card__body">
+            <h3 class="project-card__title">DMM 生成AI CAMP「ゼミ」講師</h3>
+            <p class="project-card__sub">DMM 副業 / 2026.05〜</p>
+            <p class="project-card__desc">ClaudeCodeマスターゼミ（第1期 270名以上応募）、Difyマスターゼミ（第1期 100名以上応募）、ClaudeCode入門ゼミ、AIアプリ開発入門ゼミの講師・登壇者。第1期〜第6期でのべ10クラスを担当し、最大6クラスを並行運営。週次LIVE講義から卒業制作の指導まで担当。</p>
+            <div class="project-card__tags">
+              <span class="tag tag--ai">Claude Code</span>
+              <span class="tag tag--ai">Dify</span>
+            </div>
+          </div>
+          <div class="project-card__footer">
+            <span class="project-card__badge">副業</span>
+          </div>
+        </div>
+
+        <div class="project-card fade-in">
+          <div class="project-card__bar">
+            <div class="terminal__dots terminal__dots--sm">
+              <span class="dot dot--r"></span><span class="dot dot--y"></span><span class="dot dot--g"></span>
+            </div>
+            <span class="project-card__filename">career-mentor.md</span>
+          </div>
+          <div class="project-card__body">
+            <h3 class="project-card__title">デジハク 生成AI PRO 専属メンター</h3>
+            <p class="project-card__sub">UNIT BASE 副業 / 2026.04〜2026.10</p>
+            <p class="project-card__desc">生成AI PRO コース受講生へのマンツーマン面談を通じ、AI を活用したキャリア形成・収入向上に関する伴走支援を担当。Claude Code のスキルズ／プラグインをテーマにした講義にも登壇。本コースの教材作成・カリキュラム設計は範囲外。</p>
+            <div class="project-card__tags">
+              <span class="tag tag--ai">ChatGPT</span>
+              <span class="tag tag--ai">Claude</span>
+              <span class="tag tag--ai">Dify</span>
+            </div>
+          </div>
+          <div class="project-card__footer">
+            <span class="project-card__badge">副業</span>
+          </div>
+        </div>
+
+        <div class="project-card fade-in">
+          <div class="project-card__bar">
+            <div class="terminal__dots terminal__dots--sm">
+              <span class="dot dot--r"></span><span class="dot dot--y"></span><span class="dot dot--g"></span>
+            </div>
+            <span class="project-card__filename">boarding-pass.js</span>
+          </div>
+          <div class="project-card__body">
+            <h3 class="project-card__title">ゼミ学習管理システム（リカイド／Boarding Pass）</h3>
+            <p class="project-card__sub">DMM 副業 / 2026.06〜</p>
+            <p class="project-card__desc">「受講生がどこで詰まっているか見えない」という講師業務の課題から内製。授業中の理解度チェックと、授業外の演習・宿題・模擬試験＋成績集計を別プロダクトとして設計。外部依存ゼロの POC で仕様を検証してから Turso＋Vercel の本番構成へ移行。理解度チェックは 2026.09 で役目を終え、現在は Boarding Pass が3ゼミ・複数期と生成AIパスポート試験対策で稼働中。問題集は合計900問超を作成。</p>
+            <div class="project-card__tags">
+              <span class="tag tag--tech">Node.js</span>
+              <span class="tag tag--tech">Turso</span>
+              <span class="tag tag--tech">Vercel</span>
+              <span class="tag tag--tech">SQLite</span>
+            </div>
+          </div>
+          <div class="project-card__footer">
+            <span class="project-card__badge">副業</span>
+          </div>
+        </div>
+
+        <div class="project-card fade-in">
+          <div class="project-card__bar">
+            <div class="terminal__dots terminal__dots--sm">
+              <span class="dot dot--r"></span><span class="dot dot--y"></span><span class="dot dot--g"></span>
+            </div>
+            <span class="project-card__filename">pop_generator.py</span>
+          </div>
+          <div class="project-card__body">
+            <h3 class="project-card__title">書籍POP・LP自動生成マルチエージェントシステム</h3>
+            <p class="project-card__sub">DMM 副業 / 2026.06〜2026.07</p>
+            <p class="project-card__desc">書籍の販促POP画像とLPを一括自動生成するシステム。背景ビジュアルは画像生成APIに任せ、日本語テキストは Pillow で合成する分担にして文字崩れを構造的に回避した。APIキー未設定でも動くフォールバックや、ネット接続不要のプレゼンデモなど「本番で止まらない」設計を優先。</p>
+            <div class="project-card__tags">
+              <span class="tag tag--tech">Python</span>
+              <span class="tag tag--tech">Flask</span>
+              <span class="tag tag--tech">Pillow</span>
+              <span class="tag tag--ai">fal.ai</span>
+            </div>
+          </div>
+          <div class="project-card__footer">
+            <span class="project-card__badge">副業</span>
+          </div>
+        </div>
+
+        <div class="project-card fade-in">
+          <div class="project-card__bar">
+            <div class="terminal__dots terminal__dots--sm">
+              <span class="dot dot--r"></span><span class="dot dot--y"></span><span class="dot dot--g"></span>
+            </div>
+            <span class="project-card__filename">ai-training.md</span>
+          </div>
+          <div class="project-card__body">
+            <h3 class="project-card__title">法人向けAI研修 カリキュラム設計</h3>
+            <p class="project-card__sub">UNIT BASE 副業 / 2026.06〜2026.10</p>
+            <p class="project-card__desc">デジハク法人向けAI研修（全10回）の構成設計と、中核となる STEP2（全6回）の設計を担当。模擬案件「自社情報を回答するチャットボット」を Dify のチャットフローで作り切る集合型ワークショップとして設計し、RAG を「素材づくり」と「結線して価値が出る」の2段階に分割した。</p>
+            <div class="project-card__tags">
+              <span class="tag tag--ai">Dify</span>
+              <span class="tag tag--tech">Google Apps Script</span>
+            </div>
+          </div>
+          <div class="project-card__footer">
+            <span class="project-card__badge">副業</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- OSS -->
+  <section class="section" id="oss">
+    <div class="container">
+      <header class="section__header fade-in">
+        <p class="section__label">oss</p>
+        <h2 class="section__title">OSS 活動</h2>
+        <p class="section__sub">個人開発・GitHub 公開中のオープンソースプロジェクト。</p>
+      </header>
+
+      <div class="oss-card fade-in">
+        <div class="oss-card__header">
+          <div class="oss-card__title-block">
+            <h3 class="oss-card__title">cc-DevelopmentTeam</h3>
+            <p class="oss-card__sub">Claude Code 向けプラグイン ── 5部署サブエージェント体制で個人開発を運用するワークフロー</p>
+          </div>
+          <a class="oss-card__link" href="https://github.com/miyazakiryuji/cc-DevelopmentTeam" target="_blank" rel="noopener">
+            <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+            GitHub
+          </a>
+        </div>
+
+        <p class="oss-card__desc">
+          個人開発を「設計／開発／レビュー／テスト＋セキュリティ」の 5 つのサブエージェント部署体制で運用するワークフローを提供する Claude Code プラグイン。MIT License with Attribution Requirement で公開。企画・要件定義・設計・実装・ドキュメント整備・ライセンス設計・リリース運用まで一貫して担当。
+        </p>
+
+        <div class="oss-card__grid">
+          <div class="oss-card__col">
+            <h4 class="oss-card__cat">5部署のサブエージェント</h4>
+            <ul class="oss-card__list">
+              <li><span class="oss-card__role">architect</span><span class="oss-card__role-desc">設計</span></li>
+              <li><span class="oss-card__role">developer</span><span class="oss-card__role-desc">実装</span></li>
+              <li><span class="oss-card__role">reviewer</span><span class="oss-card__role-desc">レビュー</span></li>
+              <li><span class="oss-card__role">tester</span><span class="oss-card__role-desc">テスト</span></li>
+              <li><span class="oss-card__role">security-reviewer</span><span class="oss-card__role-desc">セキュリティ点検</span></li>
+            </ul>
+          </div>
+          <div class="oss-card__col">
+            <h4 class="oss-card__cat">主な提供機能</h4>
+            <ul class="oss-card__bullets">
+              <li>13 種類のスラッシュコマンド（guide / brainstorm / architect / develop / test / refactor / release-check ほか）</li>
+              <li>3 段ドキュメント階層 ── vision・roadmap → basic-design → requirements + specs</li>
+              <li>仕様書なし実装の完了時に自動で仕様書を生成する back-fill 機構</li>
+              <li>状態ファイル <code>docs/.cc-dev-state.json</code> による compaction 対策</li>
+              <li>19 言語に対応した docstring テンプレート</li>
+              <li>日本語／英語 2 種類の README、運用ガイド、サンプルプロジェクト同梱</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="oss-card__tags">
+          <span class="tag tag--ai">Claude Code</span>
+          <span class="tag tag--tech">Markdown</span>
+          <span class="tag tag--tech">JSON</span>
+          <span class="tag tag--tech">Bash</span>
+          <span class="tag tag--tool">Plugin Marketplace</span>
+          <span class="tag tag--cert">MIT + Attribution</span>
+        </div>
+      </div>
+
+      <div class="oss-card fade-in">
+        <div class="oss-card__header">
+          <div class="oss-card__title-block">
+            <h3 class="oss-card__title">Workshop 配布教材のプラグイン 3本</h3>
+            <p class="oss-card__sub">DMM の AI Workshop で扱う題材を、その場限りの手順書ではなく「後から拡張できる資産」として公開</p>
+          </div>
+          <a class="oss-card__link" href="https://github.com/miyazakiryuji" target="_blank" rel="noopener">
+            <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+            GitHub
+          </a>
+        </div>
+
+        <p class="oss-card__desc">
+          Workshop の題材を再利用できる Claude Code プラグインとして設計・実装し、GitHub で公開。参加者が Workshop 後も自分の業務に合わせて拡張できる形にすることを狙いとした。いずれも日本語ドキュメント・参加者向けの導入手順を同梱し、公開後もバージョンアップを継続している。企画・設計・実装・ドキュメント整備・リリース運用まで一貫して担当。
+        </p>
+
+        <div class="oss-card__grid">
+          <div class="oss-card__col">
+            <h4 class="oss-card__cat">公開中のプラグイン</h4>
+            <ul class="oss-card__list">
+              <li><span class="oss-card__role">proposal-slidekit</span><span class="oss-card__role-desc">商談メモ → 提案書 / PPTX</span></li>
+              <li><span class="oss-card__role">competitor-researcher</span><span class="oss-card__role-desc">競合の料金・特徴を調査</span></li>
+              <li><span class="oss-card__role">my-secretary</span><span class="oss-card__role-desc">自分専用の AI 秘書</span></li>
+            </ul>
+          </div>
+
+          <div class="oss-card__col">
+            <h4 class="oss-card__cat">主な機能</h4>
+            <ul class="oss-card__bullets">
+              <li>商談メモを渡すだけで提案書・PPTX を自動生成。画像差し込みと好み設定に対応（v1.2.0）</li>
+              <li>競合の料金・特徴を Web 調査し、出典付きの比較レポートを Markdown ＋ HTML ダッシュボード ＋ PDF で出力（v1.3.0）</li>
+              <li>定点観測（diff）と環境チェック（doctor）で、調査を継続的に回せる設計</li>
+              <li>朝会 / 夕会 / 週次レビュー、秘書のキャラ設定、Gmail・カレンダーの任意連携（v1.4.0）</li>
+              <li>UserPromptSubmit フックによる「秘書から声をかける」挙動</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="oss-card__tags">
+          <span class="tag tag--ai">Claude Code</span>
+          <span class="tag tag--tech">Python</span>
+          <span class="tag tag--tech">Markdown</span>
+          <span class="tag tag--tool">Skills / Hooks</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Activities -->
+  <section class="section section--alt" id="activities">
+    <div class="container">
+      <header class="section__header fade-in">
+        <p class="section__label">activities</p>
+        <h2 class="section__title">課外活動</h2>
+      </header>
+
+      <div class="activity-list fade-in">
+        <div class="activity-card activity-card--with-photo">
+          <a class="activity-card__photo" href="dmm-bootcamp-group-photo.png" target="_blank" rel="noopener">
+            <img src="dmm-bootcamp-group-photo.png" alt="DMM AI 1DAY Boot Camp 第1回オフラインイベント 集合写真" loading="lazy" />
+            <span class="activity-card__photo-caption">第1回 DMM オフラインイベント 集合写真</span>
+          </a>
+          <div class="activity-card__main">
+            <div class="activity-card__date">
+              <span class="activity-card__year">2026</span>
+              <span class="activity-card__day">05.17</span>
+            </div>
+            <div class="activity-card__body">
+              <h3 class="activity-card__title">DMM「AI 1DAY Boot Camp」運営スタッフ</h3>
+              <p class="activity-card__sub">単発・ボランティア / 会場：DMM 六本木オフィス</p>
+              <p class="activity-card__desc">
+                DMM 主催の初オフラインリアルイベント「AI 1DAY Boot Camp」に運営スタッフとして参加。Workshop・マスターゼミ等の日々の活動を評価いただき、DMM 側からのお声がけを受けて参画。バイブコーディング Workshop および AIデザイン Workshop における受講生のフォローアップ補助、会場設営・来場者誘導・オペレーション裏方支援を担当。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section" id="contact">
+    <div class="container">
+      <header class="section__header fade-in">
+        <p class="section__label">contact</p>
+        <h2 class="section__title">お問い合わせ</h2>
+        <p class="section__sub">業務委託のご相談はお気軽にどうぞ。</p>
+      </header>
+      <div class="contact__list fade-in">
+        <a class="contact__item" href="mailto:miyazaki.ryuji.pgc@gmail.com">
+          <div class="contact__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/></svg>
+          </div>
+          <div class="contact__body">
+            <p class="contact__label">Email</p>
+            <p class="contact__value">miyazaki.ryuji.pgc@gmail.com</p>
+          </div>
+          <span class="contact__arrow">→</span>
+        </a>
+        <a class="contact__item" href="https://github.com/miyazakiryuji" target="_blank" rel="noopener">
+          <div class="contact__icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+          </div>
+          <div class="contact__body">
+            <p class="contact__label">GitHub</p>
+            <p class="contact__value">github.com/miyazakiryuji</p>
+          </div>
+          <span class="contact__arrow">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__copy">// &copy; 2026 宮﨑竜治. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
